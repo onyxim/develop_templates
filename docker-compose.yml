@@ -1,0 +1,18 @@
+version: '3'
+services:
+  base: &base
+    image: base
+    build:
+      context: ./config/base
+      dockerfile: Dockerfile
+
+  pycharm:
+    image: flask_base
+    volumes:
+       - ./code:/code
+       - ./pycharm_helpers:/root/.pycharm_helpers/
+    ports:
+       - "1022:22"
+
+  hello:
+    image: hello-world
