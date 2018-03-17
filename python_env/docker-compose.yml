@@ -14,5 +14,10 @@ services:
     ports:
        - "1022:22"
 
-  hello:
-    image: hello-world
+  db:
+    image: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata: {}
