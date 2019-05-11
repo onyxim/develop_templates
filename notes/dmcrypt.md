@@ -20,7 +20,12 @@ https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/configure-
 
 Size for efi partion should be at least 260mb for modern 4k drives.
 
-# grub
-```bash
-grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB --recheck
-```
+
+
+# base info 
+https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system
+
+## LVM on LUKS
+
+Base scenario for encryption
+
