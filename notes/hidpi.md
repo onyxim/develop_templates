@@ -32,6 +32,12 @@ Don't forget to update linux kernel
 mkinitcpio -p linux
 ```
 
+# SDDM
+https://wiki.archlinux.org/index.php/SDDM#DPI_settings
+https://wiki.archlinux.org/index.php/SDDM#Enable_HiDPI
+
+For some reason settings over above links doesn't work. Tried 144 DPI.
+
 # KDE settings
 
 For 4k on 15.6" display, 1.9 scale is fine. Use native resolution - it's fine with properly set driver.
