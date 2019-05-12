@@ -32,3 +32,7 @@ Don't forget to update linux kernel
 mkinitcpio -p linux
 ```
 
+# KDE settings
+
+For 4k on 15.6" display, 1.9 scale is fine. Use native resolution - it's fine with properly set driver.
+
