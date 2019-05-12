@@ -1,12 +1,3 @@
-# hidpi
-
-Described here: https://wiki.archlinux.org/index.php/HiDPI#Linux_console
-
-```bash
-setfont /usr/share/kdb/consolefonts/latarcyrheb-sun32.psfu.gz
-```
-
-
 # wi-fi
 
 ## enable wi-fi interface
