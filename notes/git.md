@@ -6,6 +6,9 @@
 git config --global user.name "Sergey Chernyak"
 # enable gpg
 git config --global commit.gpgsign true
+# aliases
+## resetup alias for get current fresh upstream
+git config --global alias.resetup '!git fetch && git reset --hard "origin/`git rev-parse --abbrev-ref HEAD`"'git config --global alias.resetup '!git fetch && git reset --hard "origin/`git rev-parse --abbrev-ref HEAD`"'
 ```
 
 ## work env
