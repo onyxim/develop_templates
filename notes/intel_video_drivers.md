@@ -17,3 +17,5 @@ Section "Device"
   Option      "TearFree" "true"
 EndSection
 ```
+
+This file probably caused xorg freeze and crash. Delete it.
