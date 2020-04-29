@@ -23,3 +23,11 @@ set options can be combined
 ```bash
 set -xe
 ```
+
+# always continue
+
+Don't stop at some error.
+
+ ```bash
+some_command || true 
+```
