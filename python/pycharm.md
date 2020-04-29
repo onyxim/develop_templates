@@ -5,3 +5,8 @@
 ```py
 # noinspection PyUnresolvedReferences
 ```
+
+## ignore type checking
+```py
+# noinspection PyTypeChecker
+```
