@@ -12,7 +12,7 @@
 ```
 
 # disable formatter for some lines
-It's possible to ignore some lines with autoformat (including optimize imports) in pycharm.
+It's possible to ignore some lines with autoformat (exluding optimize imports) in pycharm.
 
 ## Enable formatter markers in comments
 Enable it in pycharm settings. Search for `Formatter control`. More info 
@@ -23,3 +23,7 @@ Enable it in pycharm settings. Search for `Formatter control`. More info
 # @formatter:off
 # @formatter:on
 ```
+
+# How to not optimize imports when code reformat?
+Press `Ctrl,Alt,Shift,L` and uncheck `Optimize Imports` option.  You still can directly optimize imports with 
+`Ctrl,Alt,O`.
