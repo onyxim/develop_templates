@@ -16,7 +16,7 @@ class FactoryAbstract:
 
 ## python 3.7+
 
-You can write it like this, without comment.
+You can write it like this, without comment. More info [here](https://www.python.org/dev/peps/pep-0563/)
 ```pydocstring
 from typing import TYPE_CHECKING
 
