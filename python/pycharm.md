@@ -26,4 +26,4 @@ Enable it in pycharm settings. Search for `Formatter control`. More info
 
 # How to not optimize imports when code reformat?
 Press `Ctrl,Alt,Shift,L` and uncheck `Optimize Imports` option.  You still can directly optimize imports with 
-`Ctrl,Alt,O`.
+`Ctrl,Alt,O`. It's also possible to reformat just VCS changed code.
