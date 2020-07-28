@@ -7,7 +7,7 @@ cd "$(dirname "$0")"
 # debug all lines in script
 
 ```bash
-set -x
+set -e
 ```
 
 # Stop script when al least one line failed
