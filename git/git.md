@@ -13,7 +13,7 @@ git config --global alias.resetup '!git fetch && git reset --hard "origin/`git r
 
 ## work env
 ```bash
-git config --global user.name "Черняк Сергей Романович"
+git config --global user.name "Черняк Сергей"
 git config --global user.email srchernyak@sbercloud.ru
 git config --global user.signingkey CC6B1F09D2E1F9ECCEA5969EEACA1977F4572249
 git config --global alias.personal '!git config user.email chernyaksergey@gmail.com && git config user.name "Sergey Chernyak" && git config --replace-all user.signingkey A0A5815FCD679705EE068A4E74554AA14FB9ED33'
