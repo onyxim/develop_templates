@@ -1,0 +1,1 @@
+1. Do not forget add --autogenerate flag for `alembic revision`

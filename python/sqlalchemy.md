@@ -1,3 +1,19 @@
+# Alchemy gotchas
+## naming convention for alembic use and beyond
+https://alembic.sqlalchemy.org/en/latest/naming.html#integration-of-naming-conventions-into-operations-autogenerate
+```python
+# in your application's model:
+
+meta = MetaData(naming_convention={
+        "ix": "ix_%(column_0_label)s",
+        "uq": "uq_%(table_name)s_%(column_0_name)s",
+        "ck": "ck_%(table_name)s_%(constraint_name)s",
+        "fk": "fk_%(table_name)s_%(column_0_name)s_%(referred_table_name)s",
+        "pk": "pk_%(table_name)s"
+      })
+Base = declarative_base(metadata=meta)
+```
+
 # Abstract classes for declarative models
 
 ## mixin
@@ -7,7 +23,7 @@ https://docs.sqlalchemy.org/en/13/orm/extensions/declarative/mixins.html#mixin-a
 ```py
 from sqlalchemy.ext.declarative import declared_attr
 
-class MyMixin(object):
+class MyMixin:
 
     @declared_attr
     def __tablename__(cls):
@@ -29,7 +45,7 @@ class MyModel(MyMixin, Base):
 ```py
 from sqlalchemy.ext.declarative import declared_attr
 
-class Base(object):
+class Base:
     @declared_attr
     def __tablename__(cls):
         return cls.__name__.lower()
